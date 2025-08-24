@@ -1,0 +1,160 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "cacf3833-df43-4b49-9bec-695372bd747a")
+	(paper "A4")
+	(lib_symbols)
+	(text "Version 2.0 Ideas:\n\n- Allow multiple TCs, mux'd through a TMUX1208\n- Use digital TC to I2C converter such as MCP96RL00T-E-MX (+/- 4c)\n                                       or MCP96RL01T-E-MX (+/- 2c)\n- Integral 110V power supply (and TRIAC to control heating element)\n    (high power PCB design)\n- STM32 central processor (Toaster-Flo F4) or ESP32 (Toaster-Flo 32)\n- Color TFT display\n- A way to program or edit reflow curves without reprogramming device\n- Fans or something to circulate heat inside the oven\n- temperature sensor on pcb, and a fan, to protect the pcb\n"
+		(exclude_from_sim no)
+		(at 31.75 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cdb840a4-36c9-4abc-b01a-7df089429479")
+	)
+	(sheet
+		(at 104.14 46.99)
+		(size 31.75 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "56ca41a7-9073-4210-bd84-37ca3bb76cf3")
+		(property "Sheetname" "Microcontroller"
+			(at 104.14 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 104.14 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 104.14 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Control Board"
+				(path "/cacf3833-df43-4b49-9bec-695372bd747a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 147.32 46.99)
+		(size 31.75 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d19a9fb1-ca2d-4275-8c12-7a3e138efa49")
+		(property "Sheetname" "Connectors"
+			(at 147.32 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 147.32 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Control Board"
+				(path "/cacf3833-df43-4b49-9bec-695372bd747a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 58.42 46.99)
+		(size 31.75 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0e69cd5-2810-484b-9f4e-a0c7c160b94e")
+		(property "Sheetname" "Power Supply and USB"
+			(at 58.42 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_and_usb.kicad_sch"
+			(at 58.42 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Control Board"
+				(path "/cacf3833-df43-4b49-9bec-695372bd747a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
