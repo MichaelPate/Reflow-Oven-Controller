@@ -412,22 +412,6 @@
     [
       "eed07a2d-3930-4f9b-ae1a-c88afb3cbfb0",
       "Root"
-    ],
-    [
-      "744e5ce7-6145-421a-a6c6-d1ae739045aa",
-      "SSR Driver"
-    ],
-    [
-      "9446ec6e-72df-404f-bfe4-09721395ef42",
-      "Power Supply"
-    ],
-    [
-      "478bfd9d-ccfa-415e-b408-7fb42c6eb250",
-      "Peripherals"
-    ],
-    [
-      "34f143fb-16f0-42a4-b2dd-966c1dba4f1c",
-      "Controller"
     ]
   ],
   "text_variables": {}
