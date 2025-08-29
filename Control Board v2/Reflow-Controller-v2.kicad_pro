@@ -509,7 +509,7 @@
         "line_style": 0,
         "name": "AC_Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(255, 14, 34)",
         "wire_width": 12
       },
@@ -517,7 +517,7 @@
         "bus_width": 24,
         "name": "Digital Signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(50, 199, 6)",
         "wire_width": 12
       },
@@ -531,7 +531,7 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 0, 0)",
         "track_width": 0.2,
         "via_diameter": 0.55,
@@ -539,11 +539,19 @@
         "wire_width": 24
       },
       {
-        "bus_width": 12,
+        "bus_width": 24,
+        "name": "ICSP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 157, 13)",
+        "wire_width": 12
+      },
+      {
+        "bus_width": 24,
         "line_style": 0,
         "name": "VDD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(0, 142, 255)",
         "wire_width": 12
       }
@@ -568,7 +576,19 @@
       },
       {
         "netclass": "Digital Signal",
-        "pattern": "*D_*"
+        "pattern": "*/D_*"
+      },
+      {
+        "netclass": "ICSP",
+        "pattern": "ICSP*"
+      },
+      {
+        "netclass": "Digital Signal",
+        "pattern": "D_*"
+      },
+      {
+        "netclass": "ICSP",
+        "pattern": "*DB_*"
       }
     ]
   },
