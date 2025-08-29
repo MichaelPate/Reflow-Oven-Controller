@@ -1654,6 +1654,38 @@
 		)
 		(uuid "0b326a8d-c0a8-49f3-a9f7-f10b54093d91")
 	)
+	(text "https://electronics.stackexchange.com/questions/381961/triac-optocoupler-circuit"
+		(exclude_from_sim no)
+		(at 60.198 261.112 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1a958e9d-cbf6-47a2-bb65-42f0d6281bfc")
+	)
+	(text "StackExchange resources for TRIAC driver design"
+		(exclude_from_sim no)
+		(at 42.418 257.048 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "615e955a-0b99-437a-a596-ee07df84565b")
+	)
+	(text "https://electronics.stackexchange.com/questions/53500/optotriactriac-how-do-i-calculate-the-gate-resistor"
+		(exclude_from_sim no)
+		(at 73.152 273.558 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6f47e964-ecbd-4504-afb0-5c269f92d895")
+	)
 	(text "Link to T2035T Datasheet"
 		(exclude_from_sim no)
 		(at 264.16 249.936 0)
@@ -1677,6 +1709,26 @@
 			)
 		)
 		(uuid "853c0c0c-fbfe-4afc-8d9f-49a467b737dd")
+	)
+	(text "https://electronics.stackexchange.com/questions/248743/how-is-the-gate-trigger-resistor-value-calculated-for-a-triac/248775"
+		(exclude_from_sim no)
+		(at 84.074 265.176 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ac4c8880-f135-46ae-b220-e83c2c4f9c8e")
+	)
+	(text "https://electronics.stackexchange.com/questions/437809/triac-switching-circuit-with-optocoupler"
+		(exclude_from_sim no)
+		(at 67.564 269.494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e681632f-ee5c-4c34-b0bd-8cd9c714a9c5")
 	)
 	(text "Link to TRIAC Circuit Example"
 		(exclude_from_sim no)
