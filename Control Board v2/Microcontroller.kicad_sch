@@ -1093,6 +1093,188 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED_Filled"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED_Filled"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Filled_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "LED_Filled_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -1213,6 +1395,179 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -1737,15 +2092,15 @@
 		)
 		(uuid "f3af14e2-c3d7-47ed-a1e2-b9dd01c50258")
 	)
-	(text_box "All unused IO brought out as test pads for debugging and experimenting"
+	(text_box "IO that was brought out as test pads will be removed during production design"
 		(exclude_from_sim no)
-		(at 271.78 88.9 0)
-		(size 30.48 20.32)
+		(at 288.29 99.06 0)
+		(size 29.21 16.51)
 		(margins 2 2 2 2)
 		(stroke
 			(width 1)
 			(type solid)
-			(color 200 200 200 1)
+			(color 255 165 0 1)
 		)
 		(fill
 			(type none)
@@ -1758,7 +2113,30 @@
 			)
 			(justify left top)
 		)
-		(uuid "8c3a6ae3-8d08-479b-b76e-a5e3971b81ee")
+		(uuid "342d4b7d-fcb9-43cd-857d-59411d0170ff")
+	)
+	(text_box "LED is for debugging, it will be removed for the production design"
+		(exclude_from_sim no)
+		(at 276.86 180.34 0)
+		(size 29.21 16.51)
+		(margins 2 2 2 2)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "90ae8a4b-355c-47d8-bbd9-92d97c750c81")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -1782,6 +2160,12 @@
 			)
 		)
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
+	)
+	(junction
+		(at 256.54 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01a629e3-cc31-4bba-8aac-76b3e5c36e26")
 	)
 	(junction
 		(at 172.72 149.86)
@@ -1853,7 +2237,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 165.1) (xy 236.22 165.1)
+			(xy 228.6 165.1) (xy 256.54 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1900,6 +2284,16 @@
 			(type default)
 		)
 		(uuid "1aefb16c-5372-46df-ba56-95577a7d538f")
+	)
+	(wire
+		(pts
+			(xy 256.54 165.1) (xy 256.54 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e138886-8182-4f7a-97ae-79f7cb3dffba")
 	)
 	(wire
 		(pts
@@ -1970,6 +2364,16 @@
 			(type default)
 		)
 		(uuid "3f26656f-e78f-4789-b097-a209ff15538b")
+	)
+	(wire
+		(pts
+			(xy 256.54 165.1) (xy 260.35 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47d97c12-b5eb-41c0-b368-c42912369f99")
 	)
 	(wire
 		(pts
@@ -2080,6 +2484,16 @@
 			(type default)
 		)
 		(uuid "6240d482-6c70-4928-9285-a26fb36bb4c6")
+	)
+	(wire
+		(pts
+			(xy 256.54 180.34) (xy 256.54 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63cb29cd-3369-4fec-8352-4e0046eb5cd3")
 	)
 	(wire
 		(pts
@@ -2361,6 +2775,16 @@
 		)
 		(uuid "382f511a-1262-4be8-b783-812af8072db0")
 	)
+	(label "D4_K"
+		(at 256.54 182.88 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "82caa3d4-efbd-4b4e-849c-ce8ed537ce6d")
+	)
 	(label "XTAL_1"
 		(at 187.96 139.7 0)
 		(effects
@@ -2400,16 +2824,6 @@
 			(justify left bottom)
 		)
 		(uuid "d060a33a-ba19-4442-b16c-f286eedebce8")
-	)
-	(label "ICSP_RST"
-		(at 187.96 125.73 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left bottom)
-		)
-		(uuid "db5fb589-08e5-44d7-869d-8c0d067f383a")
 	)
 	(label "DB_A3"
 		(at 231.14 137.16 0)
@@ -2745,7 +3159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 116.84 0)
 			(effects
 				(font
@@ -2950,7 +3364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 147.32 0)
 			(effects
 				(font
@@ -3049,6 +3463,76 @@
 			(project "Reflow-Controller-v2"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 256.54 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7785b495-f4cc-4b2f-ae57-79d8054b06fe")
+		(property "Reference" "R8"
+			(at 259.08 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 259.08 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 257.556 186.944 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 256.54 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "124722b0-b68a-4121-8bbb-f44cfe31ab42")
+		)
+		(pin "2"
+			(uuid "dba4b6e2-54c1-49d3-92a3-524190687498")
+		)
+		(instances
+			(project "Reflow-Controller-v2"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3448,7 +3932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 142.24 0)
 			(effects
 				(font
@@ -3515,7 +3999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 144.78 0)
 			(effects
 				(font
@@ -3582,7 +4066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 167.64 0)
 			(effects
 				(font
@@ -3647,7 +4131,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS"
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-102x"
 			(at 157.48 120.65 0)
 			(effects
 				(font
@@ -3760,6 +4244,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 256.54 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce8279fa-7b5e-4938-84d3-91142b5757ec")
+		(property "Reference" "D4"
+			(at 260.35 175.5774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 260.35 178.1174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 256.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, filled shape"
+			(at 256.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1de7b56-da2d-470a-87eb-65f97cbe61b0")
+		)
+		(pin "2"
+			(uuid "650ab1e0-6c61-4ca8-96cf-61dabfba9330")
+		)
+		(instances
+			(project "Reflow-Controller-v2"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 213.36 81.28 0)
 		(unit 1)
@@ -3819,6 +4373,73 @@
 			(project "Reflow-Controller-v2"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 256.54 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d56e54fb-004e-428e-b561-324ea2c40c5d")
+		(property "Reference" "#PWR028"
+			(at 256.54 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 256.54 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5968fb01-687d-46e9-9050-71986a9a066d")
+		)
+		(instances
+			(project "Reflow-Controller-v2"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3893,7 +4514,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 236.22 165.1 270)
+		(at 260.35 165.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3901,7 +4522,7 @@
 		(dnp no)
 		(uuid "de81ecae-44f0-4b1d-8569-0c206a4bf36f")
 		(property "Reference" "TP8"
-			(at 240.792 165.1 90)
+			(at 264.922 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,7 +4531,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 241.3 166.3699 90)
+			(at 265.43 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3919,8 +4540,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 236.22 170.18 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 260.35 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,7 +4550,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 170.18 0)
+			(at 260.35 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3938,7 +4559,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 236.22 165.1 0)
+			(at 260.35 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,7 +4674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 154.94 0)
 			(effects
 				(font
@@ -4257,7 +4878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 236.22 152.4 0)
 			(effects
 				(font

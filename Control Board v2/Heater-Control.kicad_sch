@@ -2207,7 +2207,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 125.73) (xy 87.63 120.65)
+			(xy 87.63 124.46) (xy 87.63 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2287,7 +2287,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 133.35) (xy 87.63 135.89)
+			(xy 87.63 132.08) (xy 87.63 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2357,7 +2357,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 143.51) (xy 87.63 146.05)
+			(xy 87.63 142.24) (xy 87.63 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2436,7 +2436,7 @@
 		(uuid "f88dfd32-5106-4f0f-8776-6a14a91c0b6b")
 	)
 	(label "D3_K"
-		(at 87.63 135.89 180)
+		(at 87.63 134.62 180)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -2555,7 +2555,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 175.006 136.906 90)
 			(effects
 				(font
@@ -2625,7 +2625,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 218.1352 142.24 0)
 			(effects
 				(font
@@ -2694,7 +2694,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 216.154 126.746 90)
 			(effects
 				(font
@@ -2805,16 +2805,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 246.38 110.49 90)
+		(at 246.38 110.49 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5e6a0b98-665d-4aef-b498-a38a6090dc8e")
 		(property "Reference" "J2"
-			(at 251.46 109.2199 90)
+			(at 241.3 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,8 +2822,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x03"
-			(at 251.46 111.7599 90)
+		(property "Value" "1366005"
+			(at 241.3 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,7 +2831,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PhoenixContact_SPTA:SPTA-THR 2.53-5.0 P26"
 			(at 246.38 110.49 0)
 			(effects
 				(font
@@ -2878,7 +2878,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 87.63 139.7 0)
+		(at 87.63 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2887,7 +2887,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f862d8e-3d56-40a5-92a5-432ae829d15c")
 		(property "Reference" "R7"
-			(at 90.17 138.4299 0)
+			(at 90.17 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2896,7 +2896,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 90.17 140.9699 0)
+			(at 90.17 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2904,8 +2904,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 88.646 139.954 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 88.646 138.684 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +2914,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 139.7 0)
+			(at 87.63 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +2923,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 87.63 139.7 0)
+			(at 87.63 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2974,7 +2974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
 			(at 192.405 126.365 90)
 			(effects
 				(font
@@ -3088,7 +3088,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 146.05 0)
+		(at 87.63 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3097,15 +3097,6 @@
 		(fields_autoplaced yes)
 		(uuid "a510ed07-2607-409b-b07d-c232c010155f")
 		(property "Reference" "#PWR018"
-			(at 87.63 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
 			(at 87.63 151.13 0)
 			(effects
 				(font
@@ -3114,8 +3105,17 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "GND"
+			(at 87.63 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 87.63 146.05 0)
+			(at 87.63 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3124,7 +3124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 146.05 0)
+			(at 87.63 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,7 +3133,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 146.05 0)
+			(at 87.63 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3244,7 +3244,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 114.554 119.634 90)
 			(effects
 				(font
@@ -3288,7 +3288,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Filled")
-		(at 87.63 129.54 90)
+		(at 87.63 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3297,7 +3297,7 @@
 		(fields_autoplaced yes)
 		(uuid "d5c83238-5940-48bb-91ec-265719276f62")
 		(property "Reference" "D3"
-			(at 91.44 128.5874 90)
+			(at 91.44 127.3174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +3306,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 91.44 131.1274 90)
+			(at 91.44 129.8574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3314,8 +3314,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 87.63 129.54 0)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 87.63 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,7 +3324,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 129.54 0)
+			(at 87.63 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3333,7 +3333,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, filled shape"
-			(at 87.63 129.54 0)
+			(at 87.63 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,7 +3381,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_Blade_ATO_directSolder"
 			(at 231.14 122.428 90)
 			(effects
 				(font
@@ -3514,7 +3514,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 174.244 119.634 90)
 			(effects
 				(font
@@ -3582,7 +3582,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:SMDIP-6_W9.53mm"
 			(at 143.51 128.27 0)
 			(effects
 				(font
