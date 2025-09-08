@@ -2181,7 +2181,7 @@
 	)
 	(text_box "HIGH VOLTAGE:\nEnsure appropriate isolation between AC and DC circuits!"
 		(exclude_from_sim no)
-		(at 111.76 86.36 0)
+		(at 107.95 91.44 0)
 		(size 30.48 24.13)
 		(margins 2.25 2.25 2.25 2.25)
 		(stroke

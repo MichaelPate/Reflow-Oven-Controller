@@ -265,7 +265,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|2133600|1422400|7f71352b-5c39-42e3-8c89-c2d8d285a2d8|00000000-0000-0000-0000-000000000000|||",
+        "symbol was modified to fit schematic better"
+      ],
+      [
+        "power_pin_not_driven|1358900|1485900|a576b023-72bc-41a2-a78a-f259660e3986|00000000-0000-0000-0000-000000000000|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|",
+        "Chassis ground needs no power flag"
+      ],
+      [
+        "power_pin_not_driven|1473200|1282700|70e338e0-5ed2-4298-95c9-cbc4599d0275|00000000-0000-0000-0000-000000000000|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|",
+        "L1 AC connection"
+      ],
+      [
+        "power_pin_not_driven|1473200|1435100|4ca1c12d-a375-4f71-99bf-5299da2e553d|00000000-0000-0000-0000-000000000000|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d7bf67a4-4b79-4ceb-8567-393e5341ccaa|",
+        "LN AC power connection"
+      ]
+    ],
     "meta": {
       "version": 0
     },
