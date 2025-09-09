@@ -1376,7 +1376,7 @@
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R3"
-			(at 5 0 180)
+			(at -0.239713 3.377104 180)
 			(layer "F.SilkS")
 			(uuid "4ea05a4b-08e1-481b-b773-1da80d1912ad")
 			(effects
@@ -1875,7 +1875,7 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "3b693e8d-479b-4a2c-9cc5-ed558a20869d")
-		(at 133 98)
+		(at 132.5 98)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -13455,7 +13455,7 @@
 	)
 	(gr_line
 		(start 172.25 49.75)
-		(end 196.75 49.75)
+		(end 197.5 49.75)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -13549,7 +13549,7 @@
 	)
 	(gr_rect
 		(start 161.75 45.75)
-		(end 197.75 55.25)
+		(end 198.75 55.25)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -14030,7 +14030,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "CAUTION"
+	(gr_text "CAUTION - 115VAC"
 		(at 172.25 49.25 0)
 		(layer "F.SilkS")
 		(uuid "535833a2-2932-4718-af84-42f5ebbdb935")
@@ -14080,7 +14080,7 @@
 		)
 	)
 	(gr_text "N"
-		(at 145.5 30.5 0)
+		(at 149 37.5 0)
 		(layer "F.SilkS")
 		(uuid "664c3927-194f-47b7-8022-b69cd0d0d9e8")
 		(effects
@@ -14227,6 +14227,18 @@
 			(justify left)
 		)
 	)
+	(gr_text "PROTOTYPE"
+		(at 158.5 60.5 0)
+		(layer "F.SilkS" knockout)
+		(uuid "b959f860-d7a6-4a9a-86f5-2f12d348f4e5")
+		(effects
+			(font
+				(size 1.35 1.35)
+				(thickness 0.27)
+				(bold yes)
+			)
+		)
+	)
 	(gr_text "GND"
 		(at 210.5 40.5 0)
 		(layer "F.SilkS")
@@ -14301,8 +14313,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "120VAC\nAC Power Switch"
-		(at 137 92.92 0)
+	(gr_text "AC Power Switch"
+		(at 136.5 92.5 0)
 		(layer "F.SilkS")
 		(uuid "d4ae5264-2bf6-46e6-8759-b95b9fdaa04e")
 		(effects
@@ -14323,6 +14335,18 @@
 				(thickness 0.15)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "USE 120VAC\nRATED SWITCH"
+		(at 141 98 0)
+		(layer "F.SilkS")
+		(uuid "db304817-d4f1-4850-8400-7f8254a5329d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
 		)
 	)
 	(gr_text "14"
@@ -14348,7 +14372,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "High Voltage!\nDisconnect AC before servicing."
+	(gr_text "High Voltage!\nRemove AC during programming!"
 		(at 172.25 53.25 0)
 		(layer "F.SilkS")
 		(uuid "e793b261-6409-4f24-9e9a-464fcd6bbf68")
