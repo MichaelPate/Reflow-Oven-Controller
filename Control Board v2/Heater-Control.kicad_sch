@@ -812,6 +812,197 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Varistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor"
+				(at -3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage dependent resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Varistor_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_0_1"
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Relay_SolidState:MOC3083M"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1882,7 +2073,7 @@
 	)
 	(text "Resistive Heater Load\n12.5A Maximum"
 		(exclude_from_sim no)
-		(at 246.38 105.156 0)
+		(at 273.05 105.156 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2096,6 +2287,12 @@
 		(uuid "246bd2f6-c3d7-42ab-adc9-47b6e5e632c2")
 	)
 	(junction
+		(at 240.03 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29f6039d-111b-4b0d-b380-6d71faf0c391")
+	)
+	(junction
 		(at 173.99 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2157,7 +2354,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 115.57) (xy 243.84 120.65)
+			(xy 270.51 115.57) (xy 270.51 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2197,7 +2394,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 109.22) (xy 273.05 120.65)
+			(xy 299.72 109.22) (xy 299.72 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2247,7 +2444,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 120.65) (xy 248.92 115.57)
+			(xy 275.59 120.65) (xy 275.59 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2297,7 +2494,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 115.57) (xy 246.38 123.19)
+			(xy 273.05 115.57) (xy 273.05 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2317,7 +2514,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 120.65) (xy 234.95 120.65)
+			(xy 270.51 120.65) (xy 261.62 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2327,7 +2524,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 120.65) (xy 227.33 120.65)
+			(xy 217.17 120.65) (xy 240.03 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2347,6 +2544,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 120.65) (xy 240.03 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8360e54a-fb4b-4fcd-8540-9cc9f92ffd4a")
+	)
+	(wire
+		(pts
 			(xy 118.11 120.65) (xy 140.97 120.65)
 		)
 		(stroke
@@ -2354,6 +2561,16 @@
 			(type default)
 		)
 		(uuid "8685b6e5-9184-41a2-83bc-19fb74f06a8e")
+	)
+	(wire
+		(pts
+			(xy 240.03 137.16) (xy 240.03 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c6f0505-4adb-472e-a978-a6a0d37ea4de")
 	)
 	(wire
 		(pts
@@ -2397,7 +2614,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 120.65) (xy 248.92 120.65)
+			(xy 299.72 120.65) (xy 275.59 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2435,6 +2652,16 @@
 		)
 		(uuid "f88dfd32-5106-4f0f-8776-6a14a91c0b6b")
 	)
+	(wire
+		(pts
+			(xy 240.03 120.65) (xy 254 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff1a3d77-8197-4d3b-8741-7993fe4586ba")
+	)
 	(label "D3_K"
 		(at 87.63 134.62 180)
 		(effects
@@ -2466,7 +2693,7 @@
 		(uuid "67578ae7-91ce-4c66-8641-57daf3d44821")
 	)
 	(label "L1_HEATER"
-		(at 236.22 120.65 0)
+		(at 262.89 120.65 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -2805,7 +3032,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 246.38 110.49 270)
+		(at 273.05 110.49 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2814,7 +3041,7 @@
 		(dnp no)
 		(uuid "5e6a0b98-665d-4aef-b498-a38a6090dc8e")
 		(property "Reference" "J2"
-			(at 241.3 109.2199 90)
+			(at 267.97 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2823,7 +3050,7 @@
 			)
 		)
 		(property "Value" "1366005"
-			(at 241.3 111.7599 90)
+			(at 267.97 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,7 +3059,7 @@
 			)
 		)
 		(property "Footprint" "PhoenixContact_SPTA:SPTA-THR 2.53-5.0 P26"
-			(at 246.38 110.49 0)
+			(at 273.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2841,7 +3068,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 110.49 0)
+			(at 273.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +3077,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 246.38 110.49 0)
+			(at 273.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,7 +3248,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 123.19 0)
+		(at 273.05 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3030,7 +3257,7 @@
 		(fields_autoplaced yes)
 		(uuid "88f6357f-2e24-40bc-ab43-bc0072c403c5")
 		(property "Reference" "#PWR06"
-			(at 246.38 128.27 0)
+			(at 273.05 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3039,7 +3266,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 246.253 127 0)
+			(at 272.923 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,7 +3275,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 124.46 0)
+			(at 273.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3057,7 +3284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 124.46 0)
+			(at 273.05 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,7 +3293,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 123.19 0)
+			(at 273.05 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3287,6 +3514,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:AC")
+		(at 240.03 148.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbd93f9d-5276-4719-894f-801b2887ee3c")
+		(property "Reference" "#PWR029"
+			(at 240.03 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "LN"
+			(at 240.03 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"AC\""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef996e8d-66bb-4516-a862-779de42a2b34")
+		)
+		(instances
+			(project "Reflow-Controller-v2"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/744632e6-da64-44af-a707-40defe9338ea"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Filled")
 		(at 87.63 128.27 90)
 		(unit 1)
@@ -3358,7 +3650,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 231.14 120.65 90)
+		(at 257.81 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3366,7 +3658,7 @@
 		(dnp no)
 		(uuid "d6901d31-c7a0-4d06-a144-17a0ca0416ab")
 		(property "Reference" "F2"
-			(at 231.14 115.824 90)
+			(at 257.81 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,15 +3666,15 @@
 			)
 		)
 		(property "Value" "20A"
-			(at 231.14 118.364 90)
+			(at 257.81 118.364 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Blade_ATO_directSolder"
-			(at 231.14 122.428 90)
+		(property "Footprint" "Fuse:Fuseholder_Clip-6.3x32mm_Littelfuse_122_Inline_P34.21x7.62mm_D2.54mm_Horizontal"
+			(at 257.81 122.428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3391,7 +3683,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 120.65 0)
+			(at 257.81 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +3692,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 231.14 120.65 0)
+			(at 257.81 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3425,7 +3717,7 @@
 	)
 	(symbol
 		(lib_id "power:AC")
-		(at 273.05 109.22 0)
+		(at 299.72 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3433,7 +3725,7 @@
 		(dnp no)
 		(uuid "e9ed1baf-6379-4d57-9271-36673ca9e5e1")
 		(property "Reference" "#PWR07"
-			(at 273.05 111.76 0)
+			(at 299.72 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,7 +3734,7 @@
 			)
 		)
 		(property "Value" "L1"
-			(at 273.05 102.616 0)
+			(at 299.72 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3450,7 +3742,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 109.22 0)
+			(at 299.72 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3459,7 +3751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 109.22 0)
+			(at 299.72 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3468,7 +3760,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"AC\""
-			(at 273.05 109.22 0)
+			(at 299.72 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,6 +3926,121 @@
 			(project ""
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/744632e6-da64-44af-a707-40defe9338ea"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 240.03 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcaec15b-055c-433c-928f-62a97a04b91e")
+		(property "Reference" "RV1"
+			(at 242.57 132.2732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Varistor"
+			(at 242.57 134.8132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.252 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage dependent resistor"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 240.03 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c9fb494d-2eaa-4e29-beaa-97878497423b")
+		)
+		(pin "1"
+			(uuid "862a2216-b7cc-4447-b63d-825cb0791b18")
+		)
+		(instances
+			(project ""
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/744632e6-da64-44af-a707-40defe9338ea"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
