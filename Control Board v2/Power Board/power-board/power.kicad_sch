@@ -4778,7 +4778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal"
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_100_Inline_P20.50x4.60mm_D1.30mm_Horizontal"
 			(at 165.1 188.468 90)
 			(effects
 				(font
@@ -5050,7 +5050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Varistor:RV_Disc_D21.5mm_W8.4mm_P10mm"
+		(property "Footprint" "TMOV20RP150E:TMOV20RP150E"
 			(at 98.552 191.77 90)
 			(effects
 				(font
