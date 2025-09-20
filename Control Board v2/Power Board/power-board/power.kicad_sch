@@ -324,206 +324,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x04"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_1_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Converter_ACDC:IRM-10-5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2757,12 +2557,6 @@
 		(uuid "e3532e5f-69e4-4736-beaa-2cf72c631362")
 	)
 	(junction
-		(at 266.7 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06827156-82c0-431b-a8a2-5b60ae9443cc")
-	)
-	(junction
 		(at 149.86 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2785,12 +2579,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63e46b61-71b0-4d9a-964f-cdb05d7881bf")
-	)
-	(junction
-		(at 266.7 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69a341d2-5304-4a48-b963-6db8f97a7861")
 	)
 	(junction
 		(at 260.35 180.34)
@@ -2835,16 +2623,6 @@
 			(type default)
 		)
 		(uuid "049797bd-ef49-4b13-978b-5a33ef621bfb")
-	)
-	(wire
-		(pts
-			(xy 273.05 107.95) (xy 266.7 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bf421a9-edeb-4fe1-9558-c22ae3766ea5")
 	)
 	(wire
 		(pts
@@ -2945,16 +2723,6 @@
 			(type default)
 		)
 		(uuid "46d21638-be78-458e-b9f8-a249bf641795")
-	)
-	(wire
-		(pts
-			(xy 273.05 110.49) (xy 266.7 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "480acf66-e042-4ff6-8ba2-f37b865c1a1f")
 	)
 	(wire
 		(pts
@@ -3088,16 +2856,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 105.41) (xy 273.05 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "912e0420-dbbc-4e65-a088-572d0c56e5c1")
-	)
-	(wire
-		(pts
 			(xy 190.5 186.69) (xy 193.04 186.69)
 		)
 		(stroke
@@ -3105,26 +2863,6 @@
 			(type default)
 		)
 		(uuid "9c489439-2e96-4aaf-9461-b5dd2db9bd32")
-	)
-	(wire
-		(pts
-			(xy 266.7 107.95) (xy 266.7 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a09c792a-c82e-4156-9081-589c7bec477f")
-	)
-	(wire
-		(pts
-			(xy 266.7 110.49) (xy 266.7 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a125f7e8-ee56-4ee8-a010-c1b353de11d4")
 	)
 	(wire
 		(pts
@@ -3168,16 +2906,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 113.03) (xy 266.7 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c15246ce-182b-4cfa-af21-06e92d5aff12")
-	)
-	(wire
-		(pts
 			(xy 100.33 184.15) (xy 100.33 187.96)
 		)
 		(stroke
@@ -3185,26 +2913,6 @@
 			(type default)
 		)
 		(uuid "c6a4413a-a37f-4549-991e-9196cd50b963")
-	)
-	(wire
-		(pts
-			(xy 266.7 105.41) (xy 266.7 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e37fcd8c-2601-4792-a97b-11be160c3f5e")
-	)
-	(wire
-		(pts
-			(xy 266.7 113.03) (xy 273.05 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0e9b773-daef-4fe7-9963-88db1cc202aa")
 	)
 	(wire
 		(pts
@@ -3355,7 +3063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 198.12 255.27 0)
 			(effects
 				(font
@@ -3899,7 +3607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 180.34 255.27 0)
 			(effects
 				(font
@@ -4213,214 +3921,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 266.7 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c5c0087-9408-415d-a63b-f6a38432d076")
-		(property "Reference" "#PWR027"
-			(at 266.7 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 266.7 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 266.7 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "351a58e6-6412-484c-bd48-cbe6f63a6673")
-		)
-		(instances
-			(project "power-board"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 266.7 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95d88acc-5f39-4f35-8fe4-f9419dac2e80")
-		(property "Reference" "#PWR026"
-			(at 266.7 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 266.7 97.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 266.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 266.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "52864622-b1e7-4667-9516-93a5537655ac")
-		)
-		(instances
-			(project "power-board"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 278.13 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cb7d3f2-191f-4855-91b3-cb26b0e1a40e")
-		(property "Reference" "J6"
-			(at 280.67 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04"
-			(at 280.67 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 278.13 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 278.13 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 278.13 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "bc254ee6-f057-4e8f-b6bc-6943d8f42017")
-		)
-		(pin "4"
-			(uuid "0447a8ab-ec28-4a3e-ab8d-9bbe3e340797")
-		)
-		(pin "2"
-			(uuid "38e34060-67ce-4edc-bcdc-c2753f7d7b64")
-		)
-		(pin "1"
-			(uuid "e725dae1-4a0d-46f2-98a3-755055f6dd20")
-		)
-		(instances
-			(project "power-board"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/7d5a1283-086b-46b0-8df7-a9850521fb5e"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Filled")
 		(at 279.4 184.15 90)
 		(unit 1)
@@ -4714,7 +4214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 171.45 255.27 0)
 			(effects
 				(font
@@ -4916,7 +4416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 189.23 255.27 0)
 			(effects
 				(font
