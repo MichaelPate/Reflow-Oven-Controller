@@ -1826,7 +1826,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section B - TItle B.kicad_sch"
+		(property "Sheetfile" "Interface.kicad_sch"
 			(at 300.99 303.53 0)
 			(effects
 				(font

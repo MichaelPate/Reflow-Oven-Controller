@@ -1031,7 +1031,7 @@
 		(property "Reference" "R2"
 			(at 0 -2.5 0)
 			(layer "F.SilkS")
-			(uuid "9248c8aa-d8f5-4ab4-b7a0-e4aad0f73364")
+			(uuid "7cce608d-f9f1-4aeb-8271-be03f3fee668")
 			(effects
 				(font
 					(size 1 1)
@@ -1042,7 +1042,7 @@
 		(property "Value" "TC33X-2-103E"
 			(at 0 2.5 0)
 			(layer "F.Fab")
-			(uuid "6ff2066a-1268-434c-9808-2a1e97f036e7")
+			(uuid "491a6604-cc57-42a2-8622-df0e065f3e9e")
 			(effects
 				(font
 					(size 1 1)
@@ -1055,7 +1055,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b0c6ee76-cd20-4599-8077-6edfb798dc51")
+			(uuid "964e9607-1658-4127-9d0e-287b3f995064")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1068,7 +1068,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "18700e66-7311-4a3e-8169-592d35b73e4c")
+			(uuid "61fb9895-e74e-4732-b3aa-494720098260")
 			(effects
 				(font
 					(size 1.27 1.27)
