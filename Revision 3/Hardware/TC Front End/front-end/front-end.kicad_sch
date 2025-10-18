@@ -377,7 +377,7 @@
 		)
 		(uuid "5216de6a-28ab-4e49-a422-9fd32d8fed67")
 	)
-	(text "Random Sheet 1"
+	(text "..........................................."
 		(exclude_from_sim no)
 		(at 45.72 106.68 0)
 		(effects
@@ -744,7 +744,7 @@
 		)
 		(uuid "9413d17b-fd74-4a56-8014-ec2904184d8a")
 	)
-	(text "Random Sheet 2"
+	(text "..........................................."
 		(exclude_from_sim no)
 		(at 45.72 114.3 0)
 		(effects
@@ -1026,7 +1026,7 @@
 		)
 		(uuid "c52bc9e5-2c42-41e6-ae08-fabef868928a")
 	)
-	(text "Power - Sequencing"
+	(text "..........................................."
 		(exclude_from_sim no)
 		(at 45.72 121.92 0)
 		(effects
@@ -1068,7 +1068,7 @@
 		)
 		(uuid "c932f64b-e011-46ca-8efc-bb2f186e8b13")
 	)
-	(text "Block Diagram"
+	(text "Interface"
 		(exclude_from_sim no)
 		(at 45.72 91.44 0)
 		(effects
@@ -1319,7 +1319,7 @@
 		)
 		(uuid "ecd5e3bc-c1c8-4595-a242-64b07df33fd4")
 	)
-	(text "Project Architecture"
+	(text "Revision History"
 		(exclude_from_sim no)
 		(at 45.72 99.06 0)
 		(effects
@@ -1432,7 +1432,7 @@
 		)
 		(uuid "fe1f4464-8466-41a3-95c1-bacdc38614fb")
 	)
-	(text "Revision History"
+	(text "..........................................."
 		(exclude_from_sim no)
 		(at 45.72 129.54 0)
 		(effects
@@ -1755,96 +1755,6 @@
 		(uuid "f1ab5a98-3d21-4c83-b2d8-cfe1793d64cb")
 	)
 	(sheet
-		(at 340.36 313.69)
-		(size 35.56 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "13eb0b07-00a1-4d61-8da3-582545eb29a8")
-		(property "Sheetname" "Power - Sequencing"
-			(at 340.36 312.6609 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.905 1.905)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Power - Sequencing.kicad_sch"
-			(at 341.63 314.96 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "front-end"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 299.72 302.26)
-		(size 35.56 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "de68a101-7eef-4ba8-abb4-14d03adb087f")
-		(property "Sheetname" "Block Diagram"
-			(at 299.72 301.2309 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.905 1.905)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Block Diagram.kicad_sch"
-			(at 300.99 303.53 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "front-end"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 340.36 302.26)
 		(size 35.56 5.08)
 		(exclude_from_sim no)
@@ -1884,13 +1794,13 @@
 		(instances
 			(project "front-end"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(page "7")
+					(page "3")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 299.72 313.69)
+		(at 299.72 302.26)
 		(size 35.56 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1904,8 +1814,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "fede4c36-00cc-4d3d-b71c-5243ba232202")
-		(property "Sheetname" "Project Architecture"
-			(at 299.72 312.6609 0)
+		(property "Sheetname" "Section B - Title B"
+			(at 299.72 301.2309 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -1916,8 +1826,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Project Architecture.kicad_sch"
-			(at 300.99 314.96 0)
+		(property "Sheetfile" "Section B - TItle B.kicad_sch"
+			(at 300.99 303.53 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1929,7 +1839,7 @@
 		(instances
 			(project "front-end"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(page "3")
+					(page "Interface")
 				)
 			)
 		)
