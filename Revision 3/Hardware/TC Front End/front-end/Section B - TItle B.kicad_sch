@@ -1321,10 +1321,10 @@
 		)
 		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
 	)
-	(text_box "From chart, a K type TC has a voltage of about 8.1mV at a temperature of 200C.\n\nTo output 4V when the TC is at 200C, we need a gain of 4/0.0081=493.8 or 494.\nGoing up to 520 allows up more wiggle room if the TC gets hotter than 200C."
+	(text_box "From chart, a K type TC has a voltage of about 8.1mV at a temperature of 200C.\n\nTo output 4V when the TC is at 200C, we need a gain of 4/0.0081=493.8 or 494."
 		(exclude_from_sim no)
-		(at 92.71 55.88 0)
-		(size 57.15 26.67)
+		(at 92.71 66.04 0)
+		(size 57.15 20.32)
 		(margins 2 2 2 2)
 		(stroke
 			(width 1)
