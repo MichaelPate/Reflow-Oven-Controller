@@ -1814,7 +1814,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "fede4c36-00cc-4d3d-b71c-5243ba232202")
-		(property "Sheetname" "Section B - Title B"
+		(property "Sheetname" "Interface"
 			(at 299.72 301.2309 0)
 			(effects
 				(font
@@ -1839,7 +1839,7 @@
 		(instances
 			(project "front-end"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(page "Interface")
+					(page "2")
 				)
 			)
 		)
