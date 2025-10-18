@@ -289,7 +289,7 @@
 			)
 		)
 		(instances
-			(project "power-board"
+			(project "powerBoard"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "3")
 				)
@@ -333,7 +333,7 @@
 			)
 		)
 		(instances
-			(project "power-board"
+			(project "powerBoard"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "4")
 				)
