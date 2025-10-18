@@ -5,7 +5,7 @@
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A3")
 	(title_block
-		(title "Sheet Title B")
+		(title "Interface")
 		(date "Last Modified Date")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
@@ -1207,33 +1207,27 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Flexible I/O worked examples"
+	(text "K Type TC Voltages"
 		(exclude_from_sim no)
-		(at 265.43 254 0)
+		(at 274.066 250.444 0)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/30/flexible-i-o-worked-examples/")
+			(href "https://www.pyromation.com/downloads/data/emfk_c.pdf")
 		)
-		(uuid "16842e9f-eef2-418b-80ee-4eca09c5cd4a")
+		(uuid "490d3504-aaab-42a6-825d-b18eba418a76")
 	)
-	(text "Flexible I/O source configuration"
+	(text "LM321 Datasheet"
 		(exclude_from_sim no)
-		(at 265.43 256.54 0)
+		(at 273.558 255.778 0)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/28/flexible-i-o-source-configuration/")
+			(href "https://www.onsemi.com/pdf/datasheet/lm321-d.pdf")
 		)
-		(uuid "ff128f57-01dd-404e-9bb2-8208299d438c")
+		(uuid "69eb8fc7-74aa-4cf6-824c-ddbf505b1702")
 	)
 	(text_box "Gain = 1+((R_{4}+R_{5})/(R_{2}+R_{3}))\nNominal Gain 22.3 per stage\nTwo stages, final gain 497"
 		(exclude_from_sim no)
