@@ -140,10 +140,10 @@
 	(property "DESIGNER" "Michael Pate")
 	(property "DOC_TYPE" "Draft")
 	(property "PROJECT_NAME" "Toaster-Flo")
-	(property "RELEASE_DATE" "")
+	(property "RELEASE_DATE" "10-17-2025")
 	(property "REVIEWER" "")
-	(property "REVISION" "1.0")
-	(property "VARIANT" "Rev 0")
+	(property "REVISION" "2.0")
+	(property "VARIANT" "A")
 	(net 0 "")
 	(net 1 "GND")
 	(net 2 "VDD")
@@ -1028,15 +1028,37 @@
 			(uuid "a1617bd0-bbd2-496a-96be-ab40b902712c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/3d_models/Fuse Holder.STEP"
+		(model "${KIPRJMOD}/lib/3d_models/52000001009.stp"
 			(offset
-				(xyz 18 0 0.2)
+				(xyz 18 0 2.7)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 -0 -0)
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/lib/3d_models/52000001009.stp"
+			(offset
+				(xyz 2.3 0 2.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/lib/3d_models/3A Fuse.STEP"
+			(offset
+				(xyz 10 0 8)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1627,7 +1649,7 @@
 			(uuid "c3ef4f43-3b63-46d6-ac71-939a5ca68625")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Clip-6.3x32mm_Littelfuse_122_Inline_P34.21x7.62mm_D2.54mm_Horizontal.step"
+		(model "${KIPRJMOD}/lib/3d_models/01020071Z.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1635,7 +1657,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -90)
+			)
+		)
+		(model "${KIPRJMOD}/lib/3d_models/01020071Z.stp"
+			(offset
+				(xyz 33.8 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 90)
 			)
 		)
 	)

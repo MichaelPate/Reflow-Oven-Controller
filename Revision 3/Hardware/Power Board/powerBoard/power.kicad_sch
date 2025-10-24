@@ -2462,6 +2462,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "52000001009"
+		(exclude_from_sim no)
+		(at 165.1 189.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "86ae475a-fa6f-4264-a005-a084a21de7a7")
+	)
 	(text_box "IRM-10-5\n5VDC Output\n10W Power\nVDD = 5V"
 		(exclude_from_sim no)
 		(at 205.74 106.68 0)
