@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ssd1306_font5x7.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,20 +40,128 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
+#define SSD1306_ADDR (0x3C << 1)	// I2C address for the OLED display controller
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-
+void ssd1306_draw_char(uint8_t x, uint8_t page, char c);
+void ssd1306_draw_string(uint8_t x, uint8_t page, const char *str);
+void ssd1306_cmd(uint8_t cmd);
+void ssd1306_data(uint8_t *data, size_t size);
+void ssd1306_init(void);
+void ssd1306_clear(void);
+void ssd1306_char(uint8_t x, uint8_t page, const uint8_t *glyph);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void ssd1306_draw_string(uint8_t x, uint8_t page, const char *str)
+{
+    while (*str)
+    {
+        ssd1306_draw_char(x, page, *str++);
+        x += 6;  // 5px glyph + 1px space
+
+        if (x > 122)
+            break;
+    }
+}
+
+
+void ssd1306_draw_char(uint8_t x, uint8_t page, char c)
+{
+    if (c < 0x20 || c > 0x7E)
+        c = '?';
+
+    const uint8_t *glyph = font5x7[c - 0x20];
+
+    ssd1306_cmd(0xB0 + page);
+    ssd1306_cmd(0x00 + (x & 0x0F));
+    ssd1306_cmd(0x10 + (x >> 4));
+
+    ssd1306_data((uint8_t *)glyph, 5);
+
+    uint8_t space = 0x00;
+    ssd1306_data(&space, 1); // 1px spacing
+}
+
+void ssd1306_cmd(uint8_t cmd)
+{
+    uint8_t data[2] = {0x00, cmd};
+    HAL_I2C_Master_Transmit(&hi2c1, SSD1306_ADDR, data, 2, HAL_MAX_DELAY);
+}
+
+void ssd1306_data(uint8_t *data, size_t size)
+{
+    uint8_t buf[129];
+    buf[0] = 0x40;
+    memcpy(&buf[1], data, size);
+    HAL_I2C_Master_Transmit(&hi2c1, SSD1306_ADDR, buf, size + 1, HAL_MAX_DELAY);
+}
+
+void ssd1306_init(void)
+{
+    HAL_Delay(100);
+
+    ssd1306_cmd(0xAE); // display off
+    ssd1306_cmd(0x20); // memory addressing mode
+    ssd1306_cmd(0x00); // horizontal addressing
+    ssd1306_cmd(0xB0); // page start address
+    ssd1306_cmd(0xC8); // COM scan direction
+    ssd1306_cmd(0x00); // low column
+    ssd1306_cmd(0x10); // high column
+    ssd1306_cmd(0x40); // start line
+    ssd1306_cmd(0x81); // contrast
+    ssd1306_cmd(0x7F);
+    ssd1306_cmd(0xA1); // segment remap
+    ssd1306_cmd(0xA6); // normal display
+    ssd1306_cmd(0xA8); // multiplex
+    ssd1306_cmd(0x3F);
+    ssd1306_cmd(0xA4); // display follows RAM
+    ssd1306_cmd(0xD3); // display offset
+    ssd1306_cmd(0x00);
+    ssd1306_cmd(0xD5); // clock divide
+    ssd1306_cmd(0x80);
+    ssd1306_cmd(0xD9); // pre-charge
+    ssd1306_cmd(0xF1);
+    ssd1306_cmd(0xDA); // COM pins
+    ssd1306_cmd(0x12);
+    ssd1306_cmd(0xDB); // vcom detect
+    ssd1306_cmd(0x40);
+    ssd1306_cmd(0x8D); // charge pump
+    ssd1306_cmd(0x14);
+    ssd1306_cmd(0xAF); // display ON
+}
+
+void ssd1306_clear(void)
+{
+    uint8_t zero[128] = {0};
+
+    for (uint8_t page = 0; page < 8; page++)
+    {
+        ssd1306_cmd(0xB0 + page);
+        ssd1306_cmd(0x00);
+        ssd1306_cmd(0x10);
+        ssd1306_data(zero, 128);
+    }
+}
+
+void ssd1306_char(uint8_t x, uint8_t page, const uint8_t *glyph)
+{
+    ssd1306_cmd(0xB0 + page);
+    ssd1306_cmd(0x00 + (x & 0x0F));
+    ssd1306_cmd(0x10 + (x >> 4));
+    ssd1306_data((uint8_t *)glyph, 5);
+}
+
 
 /* USER CODE END 0 */
 
@@ -86,8 +194,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
+  ssd1306_init();
+  ssd1306_clear();
+  ssd1306_draw_string(0,0,"HELLO WORLD");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -156,6 +267,40 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -170,6 +315,7 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LED_BUILTIN_GPIO_Port, LED_BUILTIN_Pin, GPIO_PIN_RESET);
