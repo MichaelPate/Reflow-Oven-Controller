@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "PhoenixContact_SPTA")(type "KiCad")(uri "/mnt/Babel/Documents/Projects/Reflow Oven/Control Board v2/Libraries/PhoenixContact_SPTA.pretty")(options "")(descr ""))
-  (lib (name "TMOV20RP150E")(type "KiCad")(uri "/mnt/Babel/Documents/Projects/Reflow Oven/Control Board v2/Libraries/TMOV20RP150E.pretty")(options "")(descr ""))
-)

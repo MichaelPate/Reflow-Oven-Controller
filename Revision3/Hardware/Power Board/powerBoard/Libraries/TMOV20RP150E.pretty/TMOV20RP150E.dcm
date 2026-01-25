@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TMOV20RP150E
-D Var MOV 150VAC/200VDC 10000A 264V Thru-Hole Radial Bulk
-K
-F https://www.littelfuse.com/media?resourcetype=datasheets&itemid=bd475732-1071-4352-b8aa-f78b0007eb05&filename=tmov-itmov
-$ENDCMP
-#
-#End Doc Library
