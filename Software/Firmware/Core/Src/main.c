@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "ssd1306_font5x7.h"
 #include <stdbool.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,6 +57,8 @@ static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
+uint8_t MAX6675_ReadRaw(void);
+float MAX6675_ReadTempC(void);
 void ssd1306_draw_char(uint8_t x, uint8_t page, char c);
 void ssd1306_draw_string(uint8_t x, uint8_t page, const char *str);
 void ssd1306_cmd(uint8_t cmd);
@@ -67,6 +70,32 @@ void ssd1306_char(uint8_t x, uint8_t page, const uint8_t *glyph);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint8_t MAX6675_ReadRaw(void)
+{
+	uint8_t rx = 0;
+	HAL_SPI_Receive(&hspi2, &rx, 1, 100);
+	return rx;
+}
+
+float MAX6675_ReadTempC(void)
+{
+	uint16_t raw;
+	HAL_GPIO_WritePin(MAX6675_CS_GPIO_Port, MAX6675_CS_Pin, 0);
+	//HAL_Delay(10);
+	raw = MAX6675_ReadRaw();
+	raw = raw << 8;
+	raw |= MAX6675_ReadRaw();
+	HAL_GPIO_WritePin(MAX6675_CS_GPIO_Port, MAX6675_CS_Pin, 1);
+
+	if (raw & 0x4)
+	{
+		return 0.0f;
+	}
+
+	raw = raw >> 3;
+	return raw * 0.25f;
+}
+
 void ssd1306_draw_string(uint8_t x, uint8_t page, const char *str)
 {
     while (*str)
@@ -208,7 +237,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	float tempC = MAX6675_ReadTempC();
+	ssd1306_draw_string(0,0,"               ");
+	char buffer[20];
+	snprintf(buffer, sizeof(buffer), "%.1f C", tempC);
+	ssd1306_draw_string(0,0,buffer);
+	HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
