@@ -28,12 +28,29 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+typedef struct
+{
+    float Kp;
+    float Ki;
+    float Kd;
+
+    float integral;
+    float prevError;
+
+    uint32_t prevTick;
+
+    float outMin;
+    float outMax;
+
+} PID_t;
 
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define HEATER_PERIOD_MS 5000
+#define ERROR_THRESH_C 4
+#define TEMP_READ_MS 300
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,6 +65,10 @@ SPI_HandleTypeDef hspi2;
 
 /* USER CODE BEGIN PV */
 #define SSD1306_ADDR (0x3C << 1)	// I2C address for the OLED display controller
+uint32_t lastHeaterTick = 0;
+uint32_t lastTempRead = 0;
+float measuredC = 0.0f;
+bool heaterState = false;
 
 /* USER CODE END PV */
 
@@ -57,6 +78,8 @@ static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
+void PID_Init(PID_t *pid, float Kp, float Ki, float Kd);
+float PID_Compute(PID_t *pid, float setpoint, float measured);
 uint8_t MAX6675_ReadRaw(void);
 float MAX6675_ReadTempC(void);
 void ssd1306_draw_char(uint8_t x, uint8_t page, char c);
@@ -70,6 +93,69 @@ void ssd1306_char(uint8_t x, uint8_t page, const uint8_t *glyph);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void PID_Init(PID_t *pid, float Kp, float Ki, float Kd)
+{
+    pid->Kp = Kp;
+    pid->Ki = Ki;
+    pid->Kd = Kd;
+
+    pid->integral = 0.0f;
+    pid->prevError = 0.0f;
+    pid->prevTick = HAL_GetTick();
+
+    pid->outMin = 0.0f;
+    pid->outMax = 1.0f;   // for duty cycle
+}
+
+float PID_Compute(PID_t *pid, float setpoint, float measured)
+{
+    uint32_t now = HAL_GetTick();
+    float dt = (now - pid->prevTick) / 1000.0f;   // convert ms → seconds
+
+    if (dt <= 0.0f)
+        return 0.0f;
+
+    pid->prevTick = now;
+
+    float error = setpoint - measured;
+
+    // ----- Proportional -----
+    float P = pid->Kp * error;
+
+    // ----- Integral -----
+    pid->integral += error * dt;
+
+    float I = pid->Ki * pid->integral;
+
+    // ----- Derivative -----
+    float derivative = (error - pid->prevError) / dt;
+    float D = pid->Kd * derivative;
+
+    pid->prevError = error;
+
+    float output = P + I + D;
+
+    // ----- Clamp output -----
+    if (output > pid->outMax)
+    {
+        output = pid->outMax;
+
+        // Anti-windup
+        if (error > 0)
+            pid->integral -= error * dt;
+    }
+    else if (output < pid->outMin)
+    {
+        output = pid->outMin;
+
+        if (error < 0)
+            pid->integral -= error * dt;
+    }
+
+    return output;
+}
+
+
 uint8_t MAX6675_ReadRaw(void)
 {
 	uint8_t rx = 0;
@@ -229,20 +315,79 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ssd1306_init();
   ssd1306_clear();
+
+  PID_t ovenPID;
+
+  PID_Init(&ovenPID, 0.05f, 0.01f, 0.2f);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  ssd1306_draw_string(0,0,"HELLO WORLD");
   while (1)
   {
     /* USER CODE END WHILE */
-	float tempC = MAX6675_ReadTempC();
-	ssd1306_draw_string(0,0,"               ");
-	char buffer[20];
-	snprintf(buffer, sizeof(buffer), "%.1f C", tempC);
-	ssd1306_draw_string(0,0,buffer);
-	HAL_Delay(500);
+	static float dutyCycle;
+	static float setPoint = 190.0f;
+	static float error = 0.0f;
+	uint32_t now = HAL_GetTick();
+
+	// Look at the measured error to the setpoint to determine duty cycle
+	// we can only read every 300ms
+	if (now - lastTempRead >= TEMP_READ_MS)
+	{
+		measuredC = MAX6675_ReadTempC();
+
+		// Display the stuff
+		char buffer[20];
+		snprintf(buffer, sizeof(buffer), "TEMP: %.2f C   ", measuredC);
+		ssd1306_draw_string(0,0,buffer);
+		snprintf(buffer, sizeof(buffer), " SP: %.2f C   ", setPoint);
+		ssd1306_draw_string(0,1,buffer);
+		snprintf(buffer, sizeof(buffer), "DUTY: %.2f %   ", dutyCycle * 100.0f);
+		ssd1306_draw_string(0,2,buffer);
+		snprintf(buffer, sizeof(buffer), "ERR: %.2f   ",error);
+		ssd1306_draw_string(0,3,buffer);
+		lastTempRead = now;
+	}
+	error = setPoint - measuredC;
+	if (error < ERROR_THRESH_C)
+	{
+		error = 0.0f;
+	}
+	//dutyCycle = PID_Compute(&ovenPID, setPoint, measuredC);
+	//dutyCycle = (error + 0.01f) / 100.0f * 10.0f;
+
+
+
+	// Use the duty cycle to actually set the heater output
+	int onTime = HEATER_PERIOD_MS * dutyCycle;
+	now = HAL_GetTick();
+
+	if (now - lastHeaterTick >= HEATER_PERIOD_MS)
+	{
+		lastHeaterTick = now;
+
+		dutyCycle = PID_Compute(&ovenPID, setPoint, measuredC);
+		// Safeguards for the duty cycle, we cant let it be higher than 80%
+		if (dutyCycle > 0.8f)
+		{
+			dutyCycle = 0.8f;
+		}
+		else if (dutyCycle < 0.0f)
+		{
+			dutyCycle = 0.0f;
+		}
+	}
+
+	if ((uint32_t)(now - lastHeaterTick) < onTime)
+	{
+		HAL_GPIO_WritePin(HEAT_OUT_GPIO_Port, HEAT_OUT_Pin, GPIO_PIN_SET);
+	}
+	else
+	{
+		HAL_GPIO_WritePin(HEAT_OUT_GPIO_Port, HEAT_OUT_Pin, GPIO_PIN_RESET);
+	}
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -379,7 +524,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, C0_Output_Pin|C1_Output_Pin|C2_Output_Pin|LED_BUILTIN_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, C0_Output_Pin|C1_Output_Pin|C2_Output_Pin|LED_BUILTIN_Pin
+                          |HEAT_OUT_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, GPIO_PIN_RESET);
@@ -394,9 +540,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(Button_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : C0_Output_Pin C1_Output_Pin C2_Output_Pin LED_BUILTIN_Pin
-                           MAX6675_CS_Pin */
+                           MAX6675_CS_Pin HEAT_OUT_Pin */
   GPIO_InitStruct.Pin = C0_Output_Pin|C1_Output_Pin|C2_Output_Pin|LED_BUILTIN_Pin
-                          |MAX6675_CS_Pin;
+                          |MAX6675_CS_Pin|HEAT_OUT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

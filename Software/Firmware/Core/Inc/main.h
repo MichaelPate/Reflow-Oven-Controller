@@ -75,6 +75,8 @@ void Error_Handler(void);
 #define Buzzer_GPIO_Port GPIOC
 #define MAX6675_CS_Pin GPIO_PIN_8
 #define MAX6675_CS_GPIO_Port GPIOA
+#define HEAT_OUT_Pin GPIO_PIN_9
+#define HEAT_OUT_GPIO_Port GPIOA
 #define R0_Input_Pin GPIO_PIN_3
 #define R0_Input_GPIO_Port GPIOB
 #define R1_Input_Pin GPIO_PIN_4
