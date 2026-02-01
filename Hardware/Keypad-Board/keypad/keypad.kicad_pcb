@@ -4976,6 +4976,17 @@
 		(embedded_fonts no)
 	)
 	(gr_rect
+		(start 152 89.5)
+		(end 157 94.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "6ee8ffd7-db39-412e-b134-a205ff2751ab")
+	)
+	(gr_rect
 		(start 165.465327 87.158133)
 		(end 194.465327 97.158133)
 		(stroke
