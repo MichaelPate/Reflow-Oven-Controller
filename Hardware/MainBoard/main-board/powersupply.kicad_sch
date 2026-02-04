@@ -3397,10 +3397,10 @@
 		)
 		(uuid "7f583d69-48d0-41b0-b075-0dec8c503bfe")
 	)
-	(text_box "Use M2.5 mounting screws"
+	(text_box "Use M2.5 mounting screws to secure PCB to housing"
 		(exclude_from_sim no)
 		(at 33.02 233.68 0)
-		(size 30.48 11.43)
+		(size 39.37 11.43)
 		(margins 2 2 2 2)
 		(stroke
 			(width 1)
