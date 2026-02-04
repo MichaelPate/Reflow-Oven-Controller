@@ -1166,7 +1166,7 @@
 		)
 		(uuid "d7ac5948-93ba-4038-95c3-cb73c27df74a")
 	)
-	(text "Add a comment here"
+	(text "Designed for 120VAC"
 		(exclude_from_sim no)
 		(at 222.25 177.8 0)
 		(effects

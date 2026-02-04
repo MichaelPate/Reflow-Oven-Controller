@@ -4926,6 +4926,17 @@
 		)
 		(uuid "5296044e-274e-4630-967b-cd33b3595678")
 	)
+	(text "STM32F401RET6 Datasheet"
+		(exclude_from_sim no)
+		(at 277.368 256.794 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.st.com/content/ccc/resource/technical/document/datasheet/30/91/86/2d/db/94/4a/d6/DM00102166.pdf/files/DM00102166.pdf/jcr:content/translations/en.DM00102166.pdf")
+		)
+		(uuid "57e62e2b-6034-4b81-80cd-6460e3b0b946")
+	)
 	(text "JST XH"
 		(exclude_from_sim no)
 		(at 33.274 123.698 0)
@@ -5037,6 +5048,17 @@
 			)
 		)
 		(uuid "e13acd17-d7a5-4a44-8136-a7912cc13a87")
+	)
+	(text "IRLML6244TRPBF Datasheet"
+		(exclude_from_sim no)
+		(at 278.13 250.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.infineon.com/dgdl/irlml6244pbf.pdf?fileId=5546d462533600a4015356686fed261f")
+		)
+		(uuid "e69e608d-816b-4cbf-9f86-e2b2564e2ae8")
 	)
 	(text "Fan 2"
 		(exclude_from_sim no)

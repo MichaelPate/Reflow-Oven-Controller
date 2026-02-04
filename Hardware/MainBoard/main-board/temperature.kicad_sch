@@ -2203,6 +2203,30 @@
 		)
 		(uuid "9b7a751c-4cfd-4fb8-953a-707cbc3371fd")
 	)
+	(text_box "TODO:\nChange gain of amplifier such that an output of 3.3V corresponds to 300 degrees C"
+		(exclude_from_sim no)
+		(at 226.06 184.15 0)
+		(size 43.18 20.32)
+		(margins 2 2 2 2)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 47 219 23 1)
+		)
+		(fill
+			(type color)
+			(color 55 255 27 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "a5269591-84f1-4840-93c6-007a8a5de559")
+	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
 		(at 12.7 15.24 0)

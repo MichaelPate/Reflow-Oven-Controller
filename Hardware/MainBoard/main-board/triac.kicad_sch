@@ -2535,6 +2535,29 @@
 		)
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
 	)
+	(text_box "JP4 for testing only, DNP for production"
+		(exclude_from_sim no)
+		(at 54.61 106.68 0)
+		(size 29.21 10.16)
+		(margins 2 2 2 2)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c7637a22-f42c-4285-9ddf-5f9543a282a2")
+	)
 	(text_box "DS18B20 mounted on TRIAC heatsink to measure device temperature"
 		(exclude_from_sim no)
 		(at 77.47 204.47 0)
@@ -2605,29 +2628,6 @@
 			(justify left top)
 		)
 		(uuid "d79ce956-0f54-4169-b08d-ec03ae120b69")
-	)
-	(text_box "J4 for testing only, DNP for production"
-		(exclude_from_sim no)
-		(at 62.23 86.36 0)
-		(size 24.13 16.51)
-		(margins 2 2 2 2)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2 2)
-				(color 0 0 0 1)
-			)
-			(justify top)
-		)
-		(uuid "e9d92a34-5c14-404f-88c0-a4e15e72f3b3")
 	)
 	(text_box "Per MOC3085 Datasheet:\nV_{F,LED}=1.4V @ I_{F}=20mA\nI_{FT}=5mA, I_{F,MAX}=50mA\n\nUse R_{5}=330Ω so I_{LED}=~15mA for\n5V IO from MCU"
 		(exclude_from_sim no)
