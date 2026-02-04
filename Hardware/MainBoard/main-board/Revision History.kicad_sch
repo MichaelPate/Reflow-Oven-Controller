@@ -1,0 +1,283 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
+	(paper "A3")
+	(title_block
+		(title "Revision History")
+		(date "Last Modified Date")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
+	(lib_symbols)
+	(text_box "DD.MM.YYYY - xxx Revision\nVariant: xxx"
+		(exclude_from_sim no)
+		(at 153.67 36.83 0)
+		(size 57.15 7.62)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "19e2a709-0e78-4769-b0b5-3552e4c63fea")
+	)
+	(text_box "DD.MM.YYYY - xxx Revision\nVariant: xxx"
+		(exclude_from_sim no)
+		(at 219.71 36.83 0)
+		(size 57.15 7.62)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "1b5dda48-5f18-48de-99f0-d19e69d2ca28")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 12.7 16.51 0)
+		(size 394.97 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "20a0a094-ac98-46df-bdac-21d5721f7697")
+	)
+	(text_box "DD.MM.YYYY - xxx Revision\nVariant: xxx"
+		(exclude_from_sim no)
+		(at 21.59 36.83 0)
+		(size 57.15 7.62)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "243ec8b9-067e-4132-a388-79567962278f")
+	)
+	(text_box "- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+		(exclude_from_sim no)
+		(at 156.21 45.72 0)
+		(size 58.42 115.57)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "3d3cc780-dbc7-44d5-9028-386074b96527")
+	)
+	(text_box "DD.MM.YYYY - xxx Revision\nVariant: xxx"
+		(exclude_from_sim no)
+		(at 87.63 36.83 0)
+		(size 57.15 7.62)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "50d92586-ffe1-4dac-9a83-a5d759ed83f7")
+	)
+	(text_box "- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+		(exclude_from_sim no)
+		(at 90.17 45.72 0)
+		(size 58.42 115.57)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "76352d3e-62df-484a-a87f-eafd0cf1a7e6")
+	)
+	(text_box "- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+		(exclude_from_sim no)
+		(at 222.25 45.72 0)
+		(size 58.42 115.57)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "a587f174-0edb-45e0-9aaa-4f3e77802754")
+	)
+	(text_box "- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+		(exclude_from_sim no)
+		(at 24.13 45.72 0)
+		(size 58.42 115.57)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "f225e161-3de3-4fba-8f40-387ba9c18c47")
+	)
+	(polyline
+		(pts
+			(xy 86.36 36.83) (xy 86.36 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "02ad7c48-fa29-493a-b9ef-5b6ba2037e85")
+	)
+	(polyline
+		(pts
+			(xy 218.44 36.83) (xy 218.44 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "3562b456-6240-4018-83c4-33314e063c86")
+	)
+	(polyline
+		(pts
+			(xy 20.32 36.83) (xy 20.32 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "69d70588-8e6a-4dab-9334-71551da53557")
+	)
+	(polyline
+		(pts
+			(xy 86.36 36.83) (xy 86.36 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "9373bb85-fdb3-4a67-902f-73f27df9a0eb")
+	)
+	(polyline
+		(pts
+			(xy 20.32 36.83) (xy 20.32 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "d18dfd09-6940-49d5-9fb3-cc6b8886c595")
+	)
+	(polyline
+		(pts
+			(xy 152.4 36.83) (xy 152.4 154.94)
+		)
+		(stroke
+			(width 0.635)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "e2e09f15-1b14-4117-8ee3-e9b3c6821617")
+	)
+)

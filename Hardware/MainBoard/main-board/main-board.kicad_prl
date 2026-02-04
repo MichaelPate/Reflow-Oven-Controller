@@ -15,12 +15,13 @@
       "vias": 1.0,
       "zones": 0.6
     },
+    "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -45,7 +46,6 @@
       "pads",
       "zones",
       "drc_warnings",
-      "drc_exclusions",
       "locked_item_shadows",
       "conflict_shadows",
       "shapes"
@@ -54,16 +54,19 @@
     "zone_display_mode": 0
   },
   "git": {
+    "repo_password": "",
     "repo_type": "",
     "repo_username": "",
     "ssh_key": ""
   },
   "meta": {
-    "filename": "power-reset-board.kicad_prl",
+    "filename": "MTP_Hierarchical.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
     "col_hidden": [
+      false,
+      false,
       false,
       false,
       false,
@@ -85,9 +88,13 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
     "col_widths": [
+      0,
+      0,
       0,
       0,
       0,
