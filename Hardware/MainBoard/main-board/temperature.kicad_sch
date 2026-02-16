@@ -1993,7 +1993,7 @@
 	)
 	(text "10k"
 		(exclude_from_sim no)
-		(at 198.12 148.844 0)
+		(at 198.12 159.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2055,7 +2055,7 @@
 	)
 	(text "10k"
 		(exclude_from_sim no)
-		(at 265.684 152.908 0)
+		(at 265.684 163.068 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3045,7 +3045,7 @@
 		)
 		(uuid "1f2bce46-2aff-43bb-97a0-f4ef1b01a939")
 	)
-	(label "TC_S1_FB"
+	(label "TC_S2_FB"
 		(at 219.71 139.7 0)
 		(effects
 			(font
@@ -3075,7 +3075,7 @@
 		)
 		(uuid "611fd533-e237-4dc9-ade2-bad84d4acac9")
 	)
-	(label "TC_S1_PD"
+	(label "TC_S2_PD"
 		(at 203.2 153.67 0)
 		(effects
 			(font
@@ -3155,7 +3155,7 @@
 		)
 		(uuid "e978712b-d824-4a24-9889-dbc1bc57bc97")
 	)
-	(label "TC_S1_-"
+	(label "TC_S2_-"
 		(at 203.2 123.19 0)
 		(effects
 			(font
@@ -3345,7 +3345,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 270.51 162.56 0)
+		(at 270.51 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3354,7 +3354,7 @@
 		(fields_autoplaced yes)
 		(uuid "099b3621-a224-430e-905c-a2d5a43ca78c")
 		(property "Reference" "R21"
-			(at 273.05 161.2899 0)
+			(at 273.05 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3363,7 +3363,7 @@
 			)
 		)
 		(property "Value" "15k"
-			(at 273.05 163.8299 0)
+			(at 273.05 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,7 +3372,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 271.526 162.814 90)
+			(at 271.526 152.654 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,7 +3381,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 270.51 162.56 0)
+			(at 270.51 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3390,7 +3390,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 270.51 162.56 0)
+			(at 270.51 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,7 +4096,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Variable_US")
-		(at 270.51 152.4 0)
+		(at 270.51 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4104,7 +4104,7 @@
 		(dnp no)
 		(uuid "5d146386-74ca-4aa9-8276-787b35374611")
 		(property "Reference" "R20"
-			(at 273.558 151.13 0)
+			(at 273.558 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +4113,7 @@
 			)
 		)
 		(property "Value" "TC33X-2-103E"
-			(at 273.558 153.67 0)
+			(at 273.558 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4122,7 +4122,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical"
-			(at 268.732 152.4 90)
+			(at 268.732 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +4131,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 270.51 152.4 0)
+			(at 270.51 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +4140,7 @@
 			)
 		)
 		(property "Description" "Variable resistor, US symbol"
-			(at 270.51 152.4 0)
+			(at 270.51 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +4918,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 203.2 158.75 0)
+		(at 203.2 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4927,7 +4927,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4aa4ff4-f317-42f1-9ce6-d9108aaaf369")
 		(property "Reference" "R17"
-			(at 205.74 157.4799 0)
+			(at 205.74 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4936,7 +4936,7 @@
 			)
 		)
 		(property "Value" "15k"
-			(at 205.74 160.0199 0)
+			(at 205.74 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4945,7 +4945,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 204.216 159.004 90)
+			(at 204.216 148.844 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4954,7 +4954,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 158.75 0)
+			(at 203.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,7 +4963,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 203.2 158.75 0)
+			(at 203.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5666,7 +5666,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Variable_US")
-		(at 203.2 148.59 0)
+		(at 203.2 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5674,7 +5674,7 @@
 		(dnp no)
 		(uuid "da1dedfd-6baa-4230-8e48-008a18a8ffaf")
 		(property "Reference" "R16"
-			(at 206.248 147.32 0)
+			(at 206.248 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5683,7 +5683,7 @@
 			)
 		)
 		(property "Value" "TC33X-2-103E"
-			(at 206.248 149.86 0)
+			(at 206.248 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5692,7 +5692,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical"
-			(at 201.422 148.59 90)
+			(at 201.422 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,7 +5701,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 148.59 0)
+			(at 203.2 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +5710,7 @@
 			)
 		)
 		(property "Description" "Variable resistor, US symbol"
-			(at 203.2 148.59 0)
+			(at 203.2 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
