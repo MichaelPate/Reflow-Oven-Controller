@@ -4129,8 +4129,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 303.53 104.14 270)
-		(mirror x)
+		(at 303.53 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4138,7 +4137,7 @@
 		(dnp no)
 		(uuid "5e6a0b98-665d-4aef-b498-a38a6090dc8e")
 		(property "Reference" "J5"
-			(at 298.45 102.8699 90)
+			(at 308.61 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4147,7 +4146,7 @@
 			)
 		)
 		(property "Value" "1366005"
-			(at 298.45 105.4099 90)
+			(at 308.61 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
